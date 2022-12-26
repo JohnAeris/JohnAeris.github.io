@@ -28,13 +28,13 @@ header {
 	justify-content: space-between;
 	background: transparent;
 	transition: .3s;
-	padding-left: 10px;
 }
 
 header.sticky{
 	background: var(--bg-color-secondary);
 	padding: 5px;
 	box-shadow: 0px 0px 10px rgb(0, 0, 0 / 10%);
+	opacity: .70;
 }
 
 header.scrolled {
@@ -46,6 +46,7 @@ header.scrolled {
 	max-width: 100%;
 	width: 70px;
 	height: auto;
+	margin-left: 30%;
 }
 
 .navlist {
@@ -103,6 +104,14 @@ header.scrolled .navlist a:hover::after{
 #menu-icon {
 	font-size: 35px;
 	color: var(--bg-color-primary);
+	z-index: 10001;
+	cursor: pointer;
+	display: none;
+}
+
+header.scrolled .bx-menu {
+	font-size: 35px;
+	color: var(--bg-color-secondary);
 	z-index: 10001;
 	cursor: pointer;
 	display: none;
@@ -173,4 +182,86 @@ body::-webkit-scrollbar{
 	display: none;
 }
 
+/*responsive style*/
+@media (max-width: 650px) {
+	#menu-icon {
+		display: block;
+	}
+
+	.home{
+		min-height: 80vh;
+	}
+
+	.navlist{
+		position: absolute;
+		top: -600px;
+		left: 0;
+		right: 0;
+		flex-direction: column;
+		background: var(--bg-color-secondary);
+		text-align: right;
+		transition: all .40s;
+	}
+
+	.navlist a {
+		display: block;
+		padding: 1rem;
+		margin: 1rem;
+		border-right: 2px solid var(--bg-color-primary);
+		color: var(--text-color-secondary);
+	}
+
+	.navlist a:hover{
+		background: var(--bg-color-primary);
+		color: var(--text-color-primary);
+		border-radius: 5px 0px 5px 5px;
+	}
+
+	.navlist a::after{
+		display: none;
+	}
+
+	.navlist.active {
+		top: 100%;
+	}
+
+	header.scrolled #menu-icon {
+		font-size: 35px;
+		color: black;
+		z-index: 10001;
+		cursor: pointer;
+	}
+
+	header.scrolled .navlist{
+		position: absolute;
+		left: 0;
+		right: 0;
+		flex-direction: column;
+		background: var(--bg-color-primary);
+		text-align: right;
+		transition: all .40s;
+	}
+
+	header.scrolled .navlist a {
+		display: block;
+		padding: 1rem;
+		margin: 1rem;
+		border-right: 2px solid var(--bg-color-secondary);
+		color: var(--text-color-primary);
+	}
+
+	header.scrolled .navlist a:hover{
+		background: var(--bg-color-secondary);
+		opacity: .80;
+		color: var(--text-color-secondary);
+		border-radius: 5px 0px 5px 5px;
+	}
+
+}
+
+
+
+
+
+}
 
