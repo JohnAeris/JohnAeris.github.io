@@ -1,0 +1,87 @@
+* {
+	font-family: 'Roboto Condensed', sans-serif;
+	scroll-behavior: smooth;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+:root {
+	--bg-color-primary: #ffffff;
+	--bg-color-secondary: #000000;
+	--text-color-primary: #000000;
+	--text-color-secondary: #ffffff;
+	--h1-font-size: 5rem;
+	--h3-font-size: 3rem;
+	--p-font-size: 1rem;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: transparent;
+	transition: .3s;
+}
+
+.logo img{
+	max-width: 100%;
+	width: 70px;
+	height: auto;
+}
+
+.navlist {
+	display: flex;
+	list-style-type: none;
+}
+
+.navlist li{
+	position: relative;
+}
+
+.navlist a{
+	font-size: var(--p-font-size);
+	color: var(--text-color-primary);
+	font-weight: 500;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+.navlist a::after{
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 2px;
+	background: var(--bg-color-secondary);
+	bottom: -5px;
+	left: 0;
+	transition: ease .40s;
+}
+
+.navlist a:hover::after{
+	width: 100%;
+}
+
+#menu-icon {
+	font-size: 35px;
+	color: var(--text-color-primary);
+	z-index: 10001;
+	cursor: pointer;
+	display: none;
+}
+
+.cv-btn {
+	display: inline-block;
+	padding: 9px 30px;
+	background: transparent;
+	border: 2px solid var(--bg-color-secondary);
+	border-radius: 5px;
+	color: var(--text-color-primary);
+	letter-spacing: 1px;
+	font-size: var(--p-font-size);
+	text-decoration: none;
+}
