@@ -162,7 +162,7 @@ header.scrolled .cv-btn:hover {
 															/*home section*/
 
 section {
-	padding: 100px 20%;
+	padding: 100px 10%;
 }
 
 body {
@@ -182,7 +182,56 @@ body::-webkit-scrollbar{
 	display: none;
 }
 
-/*responsive style*/
+.text-container {
+	color: var(--text-color-secondary);
+	margin-top: 40%;
+	letter-spacing: 1.5px;
+}
+
+.text-container h1 {
+	font-size: var(--h1-font-size);
+}
+
+.text-container p {
+	font-size: var(--p-font-size);
+}
+
+.option-container a{
+	margin-top: 20px;
+	display: inline-block;
+	border-radius: 5px;
+	border: 2px solid var(--bg-color-primary);
+	color: var(--text-color-secondary);
+	padding: 10px 30px;
+	text-decoration: none;
+	transition: ease .50s;
+}
+
+.option-container .cv{
+	background: var(--bg-color-primary);
+	color: var(--text-color-primary);
+	margin-left: 30px;
+	font-weight: 600;
+	transition: ease .50s;
+}
+
+.option-container .cv:hover{
+	transform: scale(1.1);
+	border: 2px solid var(--bg-color-primary);
+	color: var(--text-color-primary);
+}
+
+.option-container .am:hover{
+	transform: scale(1.1);
+	border: 2px solid var(--bg-color-primary);
+	color: var(--text-color-secondary);
+}
+
+
+
+
+
+														/*responsive style*/
 @media (max-width: 650px) {
 	#menu-icon {
 		display: block;
