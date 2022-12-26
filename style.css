@@ -81,7 +81,22 @@ header.scrolled .navlist a {
 	transition: ease .40s;
 }
 
+header.scrolled .navlist a::after{
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 2px;
+	background: var(--bg-color-secondary);
+	bottom: -5px;
+	left: 0;
+	transition: ease .40s;
+}
+
 .navlist a:hover::after{
+	width: 100%;
+}
+
+header.scrolled .navlist a:hover::after{
 	width: 100%;
 }
 
