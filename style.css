@@ -1,8 +1,7 @@
 * {
 	font-family: 'Roboto Condensed', sans-serif;
 	scroll-behavior: smooth;
-	margin-right: 10px;
-	margin-left: 10px;
+	margin: 0;
 }
 
 :root {
@@ -23,11 +22,24 @@ header {
 	top: 0;
 	right: 0;
 	z-index: 1000;
+	padding: 5px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	background: transparent;
 	transition: .3s;
+	padding-left: 10px;
+}
+
+header.sticky{
+	background: var(--bg-color-secondary);
+	padding: 5px;
+	box-shadow: 0px 0px 10px rgb(0, 0, 0 / 10%);
+}
+
+header.scrolled {
+	background: var(--bg-color-primary);
+	opacity: 0.98;
 }
 
 .logo img{
@@ -47,10 +59,15 @@ header {
 
 .navlist a{
 	font-size: var(--p-font-size);
-	color: var(--text-color-primary);
+	color: var(--text-color-secondary);
 	font-weight: 500;
 	padding: 10px 20px;
 	text-decoration: none;
+	transition: color 0.4s ease-in-out;
+}
+
+header.scrolled .navlist a {
+	color: var(--text-color-primary);
 }
 
 .navlist a::after{
@@ -58,7 +75,7 @@ header {
 	position: absolute;
 	width: 0;
 	height: 2px;
-	background: var(--bg-color-secondary);
+	background: var(--bg-color-primary);
 	bottom: -5px;
 	left: 0;
 	transition: ease .40s;
@@ -70,13 +87,34 @@ header {
 
 #menu-icon {
 	font-size: 35px;
-	color: var(--text-color-primary);
+	color: var(--bg-color-primary);
 	z-index: 10001;
 	cursor: pointer;
 	display: none;
 }
 
 .cv-btn {
+	display: inline-block;
+	padding: 9px 30px;
+	background: transparent;
+	border: 2px solid var(--bg-color-primary);
+	border-radius: 5px;
+	color: var(--text-color-secondary);
+	letter-spacing: 1px;
+	font-size: var(--p-font-size);
+	text-decoration: none;
+	font-weight: 500;
+	transition: ease .50s;
+}
+
+.cv-btn:hover{
+	transform: scale(1.1);
+	background: var(--bg-color-primary);
+	border: 2px solid var(--bg-color-primary);
+	color: var(--text-color-primary);
+}
+
+header.scrolled .cv-btn {
 	display: inline-block;
 	padding: 9px 30px;
 	background: transparent;
@@ -90,10 +128,34 @@ header {
 	transition: ease .50s;
 }
 
-.cv-btn:hover{
+header.scrolled .cv-btn:hover {
 	transform: scale(1.1);
 	background: var(--bg-color-secondary);
 	border: 2px solid var(--bg-color-secondary);
 	color: var(--text-color-secondary);
 }
+
+															/*home section*/
+
+section {
+	padding: 100px 20%;
+}
+
+body {
+	min-height: 100vh;
+	height: 100%;
+	width: 100%;
+	background: url(images/bg.webp);
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	overflow-y: scroll;
+	background-repeat: no-repeat;
+
+}
+
+/*hide scrollbar*/
+body::-webkit-scrollbar{
+	display: none;
+}
+
 
