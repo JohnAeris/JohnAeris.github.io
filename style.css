@@ -250,11 +250,71 @@ body::-webkit-scrollbar{
 	border: 2px solid var(--bg-color-primary);
 	color: var(--text-color-secondary);
 }
+															/*about-section*/
+
+.about {
+	width: 1000px;
+	max-width: 80%;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: space-around;
+	display: flex;
+	padding-top: 10%;
+	padding-bottom: 5%;
+}
+
+.about-image img {
+	width: 300px;
+	height: auto;
+	min-width: 100%;
+	max-width: 100%;
+	margin: 80% 0% 0% 0%;
+	border: 5px solid #ffffff;
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%)
+}
+
+.about-image img:hover {
+	filter: none;
+	-webkit-filter: none;
+}
+
+.about-text {
+	margin-top: 20%;
+	margin-left: 5%;
+	width: 500px;
+}
+
+.about-title {
+	font-size: var(--h3-font-size);
+}
+
+.about-text p{
+	margin-top: 20px;
+	font-size: var(--p-font-size);
+	text-align: justify;
+	line-height: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 															/*education-section*/
 .education{
-	margin-top: 20%;
+	margin-top: 0%;
 }
 
 .education-title {
@@ -336,7 +396,7 @@ body::-webkit-scrollbar{
 	display: inline;
 	margin: 40px;
 	filter: grayscale(100%);
-	-webkit-filter: grayscale(100%)
+	-webkit-filter: grayscale(100%);
 }
 
 .school-logo img{
@@ -350,11 +410,8 @@ body::-webkit-scrollbar{
 }
 
 
-
-
-
-
 														/*responsive style*/
+														
 @media (max-width: 650px) {
 	#menu-icon {
 		display: block;
