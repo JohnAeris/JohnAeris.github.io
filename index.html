@@ -7,8 +7,11 @@
 
 	<!-- personal css style -->
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="slider-style.css">
 	<!-- box icons css style -->
 	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 	<!-- google font style -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -73,6 +76,8 @@
 
 
 
+
+	<!-- skills section -->
 	<section class="skills">
 		<div class="skill-container">
 			<div class="skill-title">
@@ -144,6 +149,7 @@
 		</div>
 		
 	</section>
+
 
 
 
@@ -235,7 +241,84 @@
 
 
 
+	<!-- portfolio section -->
+	<section class="project-section">
+		<div>
+		    <div class="flex-container flex-project1 flex-active" data-slide="1">
+		    	<div class="flex-item flex-item-left">
+		      		<div class="flex-content">
+				        <p class="text-sub">Project I</p>
+				        <h1 class="text-big">Tip Calculator</h1>
+				        <p class="text-normal">It is a simple mobile application created using Jetpack Compose that calculates the amount of tip from the desired percentage of the total cost of the service, and it will display the total amount including the tip.</p>
+				        <a href="#" class="read-more-btn">Read more</a>
+		      		</div>
+		      		<p class="text-background">Calculator</p>
+		    	</div>
+			    <div class="flex-item flex-item-right"></div>
+			   	<img class="project-img" src="images/project1.png" />
+		  	</div>
+			<div class="flex-container flex-project2 animate-start" data-slide="2">
+			    <div class="flex-item flex-item-left">
+			    	<div class="flex-content">
+				        <p class="text-sub">Project II</p>
+				        <h1 class="text-big">Dota2Dict</h1>
+				        <p class="text-normal">A mobile application created using Jetpack Compose that will make it easier for players especially beginners to know the game updates and information about heroes and items in Dota 2. This application is a dictionary that provides information about dota 2 heroes, items, and game updates. </p>
+				        <a href="#" class="read-more-btn">Read more</a>
+			      	</div>
+			      	<p class="text-background">Dota2Dict</p>
+			    </div>
+			    <div class="flex-item flex-item-right"></div>
+			    <img class="project-img" src="images/project2.png" />
+			</div>
+			<div class="flex-container flex-project3 animate-start" data-slide="3">
+			    <div class="flex-item flex-item-left">
+			    	<div class="flex-content">
+				        <p class="text-sub">Project III</p>
+				        <h1 class="text-big">MovieZone</h1>
+				        <p class="text-normal">MovieZone is a simple application that contains collection of movies with different genres. The data that was used in the application was gathered and collected from the internet. Moreover, coil library was also utilized to load images from the internet. It is much more quickly since it has a variety of optimizations, including memory, disk caching, bitmap reuse, and downspacing the image in memory, which makes it faster than other image loading libraries. Jetpack compose was used to build the user interface of the application. It displays the list of movies with its genre, title, director, and other details. It was also created with light and dark theme.</p>
+				        <a href="#" class="read-more-btn">Read more</a>
+			        </div>
+			      	<p class="text-background">MovieZone</p>
+			    </div>
+			    <div class="flex-item flex-item-right"></div>
+			    <img class="project-img" src="images/project3.png" />
+			</div>
+			<div class="flex-container flex-project4 animate-start" data-slide="4">
+			    <div class="flex-item flex-item-left">
+			      	<div class="flex-content">
+				        <p class="text-sub">Project IV</p>
+				        <h1 class="text-big">Keep Notes</h1>
+				        <p class="text-normal">Keep Notes is a note application where the user can add, delete, update, and save a note. The application uses a local database called Room Database, therefore, the data from the user will be saved even if the app is closed. Since it has a local database, it can be accessed even if the user is offline or it does not need to use the internet. It is also created with cleaned and structured code using the Model-View-ViewModel Architecture pattern so that it is organize, easy to maintain, and update the application.</p>
+				          <a href="#" class="read-more-btn">Read more</a>
+			      	</div>
+			      	<p class="text-background">Notes</p>
+			    </div>
+			    <div class="flex-item flex-item-right"></div>
+			    <img class="project-img" src="images/project4.png" />
+			</div>
+			<div class="flex-container flex-project5 animate-start" data-slide="5">
+			    <div class="flex-item flex-item-left">
+			      	<div class="flex-content">
+				        <p class="text-sub">Project V</p>
+				        <h1 class="text-big">Counter App</h1>
+				        <p class="text-normal">It is a simple counter application created using Kotlin-Jetpack Compose that counts everytime the user presses the button.</p>
+				        <a href="#" class="read-more-btn">Read more</a>
+			      	</div>
+			      	<p class="text-background">Counter</p>
+			    </div>
+			    <div class="flex-item flex-item-right"></div>
+			    <img class="project-img" src="images/project5.png" />
+			</div>
+		</div>
 
+		<div class="slider__navi">
+		  <a href="#" class="slide-nav active" data-slide="1">pikachu</a>
+		  <a href="#" class="slide-nav" data-slide="2">piplup</a>
+		  <a href="#" class="slide-nav" data-slide="3">blaziken</a>
+		  <a href="#" class="slide-nav" data-slide="4">dialga</a>
+		  <a href="#" class="slide-nav" data-slide="5">zekrom</a>
+		</div>
+	</section>
 
 
 
@@ -253,5 +336,6 @@
 			loop: true
 		})
 	</script>
+	<script type="text/javascript" src="slider-script.js"></script>
 </body>
 </html>
