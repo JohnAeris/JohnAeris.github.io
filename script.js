@@ -28,3 +28,6 @@ window.onscroll = () => {
 	navlist.classList.remove('active')
 };
 
+
+
+
