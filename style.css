@@ -547,7 +547,7 @@ body::-webkit-scrollbar{
 768px
 380px*/
 
-@media only screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
 
 														/*navigation section 400px*/
 
@@ -771,18 +771,19 @@ body::-webkit-scrollbar{
 		width: 70px;
 		height: auto;
 	}
+
+															/*certification section 600px*/
+
+	.certification-title {
+		font-size: 2.5rem;
+	}
 }
 
 
 
+@media screen and (max-width: 600px) and (min-width: 400px) {
 
-
-
-
-
-@media (max-width: 650px) {
-
-	/*navigation section*/
+															/*navigation section 600px*/
 
 	#menu-icon {
 		display: block;
@@ -856,5 +857,157 @@ body::-webkit-scrollbar{
 		color: var(--text-color-secondary);
 		border-radius: 5px 0px 5px 5px;
 	}
+
+															/*home section 600px*/
+
+	.profile-image {
+		max-width: 320px;
+		display: flex;
+		justify-content: none;
+		margin-left: 0%;
+	}
+
+	.profile-image img{
+		margin-top: 15%;
+	}
+
+	.text-container {
+		margin-top: 50px;
+	}
+
+	.text-container h1 {
+		font-size: 3rem;
+	}
+
+	.text-container p {
+		margin-top: 10px;
+		font-size: 1rem;
+	}
+
+	.option-container a{
+		margin-top: 30px;
+	}
+
+	.option-container .am{
+		padding: 10px 40px;
+	}
+
+	.option-container .cv{
+		margin-left: 20px;
+		padding: 10px 50px;
+	}
+	
+															/*about section 600px*/	
+
+	.about {
+		justify-content: center;
+		display: block;
+		padding: 50px 50px;
+	}
+
+	.about-image {
+		text-align: center;
+	}
+
+	.about-image img {
+		width: 350px;
+		margin-bottom: 30px;
+		transition: ease 1s;
+	}
+
+	.about-text {
+		text-align: center;
+		margin-left: 0%;
+		width: 500px;
+	}
+
+	.about-sub {
+		font-size: 1.3rem;
+	}
+
+	.about-title {
+		font-size: 3rem;
+	}
+
+	.about-text p{
+		margin-top: 20px;
+		font-size: 1rem;
+		text-align: center;
+		line-height: 25px;
+	}
+
+															/*skills section 600px*/
+
+	.skill-title h2{
+		font-size: 3rem;
+	}
+
+	.skill-title p{
+		font-size: 1rem;
+	}
+
+	.skill-logo {
+		font-size: 1rem;
+	}
+
+	.skill-container .skill-logo-container img{
+		width: 100px;
+		height: auto;
+		max-width: 100%;
+		margin-top: 10px;
+		margin-right: 0px;
+		margin-left: 0px;
+	}	
+
+															/*education section 600px*/
+	
+	.education-title {
+		margin-bottom: 5%;
+	}
+
+	.education-title h2{
+		font-size: 3rem;
+	}
+
+	.education-title span {
+		font-size: 1.3rem;
+	}
+
+	.education-school {
+	 	letter-spacing: 1px;
+	 	font-size: 1.1rem;
+	}
+
+	.education-sub {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		font-size: 0.9rem;
+	}
+
+	.education-address {
+	 	font-size: 0.9rem;
+	 	margin-top: 0.5rem;
+	  	margin-bottom: 0.5rem;
+	}
+
+	.education-logo {
+		margin-top: 20px;
+	}
+
+	.school-logo {
+		width: 100px;
+		height: auto;
+	}
+
+															/*certification section 600px*/
+
+	.certification-title {
+		font-size: 3rem;
+	}
+
 }
+
+
+
+
 
