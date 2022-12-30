@@ -218,10 +218,10 @@
 
 .project-img {
   position: absolute;
-  width: 40%;
+  width: 400px;
   height: auto;
   min-width: 200px;
-  max-width: 40%;
+  max-width: 100%;
   min-height: auto;
   max-height: auto;
   bottom: 80px;
