@@ -7,7 +7,7 @@ window.addEventListener("scroll", function() {
 
 /*sticky scroll style*/
 document.addEventListener("scroll", ()=> {
-	if (window.scrollY > 1000) {
+	if (window.scrollY > 800) {
 		header.classList.add("scrolled");
 	} else {
 		header.classList.remove("scrolled")
