@@ -262,3 +262,38 @@
   transform: translate3d(200px,0,0);
   opacity: 0;
 }
+
+
+@media only screen and (max-width: 400px) {
+
+  .project-img {
+    width: 200px;
+    bottom: 30px;
+    right: 2%;
+  }
+
+  .text-big {
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 50px;
+    margin-left: 0px;
+  }
+
+  .text-background {
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    left: 72px;
+    bottom: -60px;
+    color: rgba(0,0,0,0.05);
+    font-size: 100px;
+    font-weight: 700;
+  }
+
+  .read-more-btn {
+    padding: 6px 20px;
+    border: 1px solid #ffffff;
+    font-size: 0.8rem;
+  }
+
+
+}

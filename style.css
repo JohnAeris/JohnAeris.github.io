@@ -265,7 +265,7 @@ body::-webkit-scrollbar{
 	border: 2px solid var(--bg-color-primary);
 	color: var(--text-color-secondary);
 }
-															/*about-section*/
+															/*about section*/
 
 .about {
 	width: 100%;
@@ -458,7 +458,7 @@ body::-webkit-scrollbar{
 
 .school-logo {
 	width: 100px;
-	height: 100px;
+	height: auto;
 	display: inline;
 	margin: 40px;
 	filter: grayscale(100%);
@@ -543,8 +543,247 @@ body::-webkit-scrollbar{
 
 
 														/*responsive style*/
+/*1024px
+768px
+380px*/
+
+@media only screen and (max-width: 400px) {
+
+														/*navigation section 400px*/
+
+	#menu-icon {
+		display: block;
+	}
+
+	.home{
+		min-height: 80vh;
+	}
+
+	.navlist{
+		position: absolute;
+		top: -600px;
+		left: 0;
+		right: 0;
+		flex-direction: column;
+		background: var(--bg-color-secondary);
+		text-align: right;
+		transition: all .40s;
+	}
+
+	.navlist a {
+		display: block;
+		padding: 1rem;
+		margin: 1rem;
+		border-right: 2px solid var(--bg-color-primary);
+		color: var(--text-color-secondary);
+	}
+
+	.navlist a:hover{
+		background: var(--bg-color-primary);
+		color: var(--text-color-primary);
+		border-radius: 5px 0px 5px 5px;
+	}
+
+	.navlist a::after{
+		display: none;
+	}
+
+	.navlist.active {
+		top: 100%;
+	}
+
+	header.scrolled #menu-icon {
+		font-size: 35px;
+		color: black;
+		z-index: 10001;
+		cursor: pointer;
+	}
+
+	header.scrolled .navlist{
+		position: absolute;
+		left: 0;
+		right: 0;
+		flex-direction: column;
+		background: var(--bg-color-primary);
+		text-align: right;
+		transition: all .40s;
+	}
+
+	header.scrolled .navlist a {
+		display: block;
+		padding: 1rem;
+		margin: 1rem;
+		border-right: 2px solid var(--bg-color-secondary);
+		color: var(--text-color-primary);
+	}
+
+	header.scrolled .navlist a:hover{
+		background: var(--bg-color-secondary);
+		opacity: .80;
+		color: var(--text-color-secondary);
+		border-radius: 5px 0px 5px 5px;
+	}
+
+															/*home section 400px*/
+
+	.home {
+		text-align: center;
+		padding: 50px 20px;
+	}
+
+	.profile-image {
+		display: flex;
+		justify-content: none;
+		max-width: 250px;
+		margin-top: 0px;
+		margin-left: 0%;
+		margin: 0 50px ;
+	}
+
+	.profile-image img{
+		margin-top: 130px;
+		border: 3px solid #ffffff;
+	}
+
+	.text-container {
+		margin-top: 50px;
+	}
+
+	.text-container h1 {
+		font-size: 1.9rem;
+	}
+
+	.text-container p {
+		margin-top: 20px;
+		font-size: 0.9rem;
+	}
+
+	.option-container {
+		justify-content: center;
+	}
+
+	.option-container .am{
+		padding: 10px 40px;
+	}
+
+	.option-container .cv{
+		margin-left: 20px;
+		padding: 10px 50px;
+	}
+
+															/*about section 400px*/	
+
+	.about {
+		justify-content: center;
+		display: block;
+		padding: 50px 30px;
+	}
+
+	.about-image {
+		text-align: center;
+	}
+
+	.about-image img {
+		width: 200px;
+		margin-bottom: 30px;
+		transition: ease 1s;
+	}
+
+	.about-text {
+		text-align: center;
+		margin-left: 0%;
+		width: 340px;
+	}
+
+	.about-sub {
+		font-size: 1rem;
+	}
+
+	.about-title {
+		font-size: 2.5rem;
+	}
+
+	.about-text p{
+		margin-top: 20px;
+		font-size: 0.9rem;
+		text-align: justify;
+		line-height: 25px;
+	}
+
+															/*skills section 400px*/	
+
+	.skill-title h2{
+		font-size: 2.5rem;
+	}
+
+	.skill-title p{
+		font-size: 0.9rem;
+	}
+
+	.skill-logo {
+		font-size: 1rem;
+	}
+
+	.skill-container .skill-logo-container img{
+		width: 90px;
+		height: auto;
+		max-width: 100%;
+		margin-top: 10px;
+		margin-right: 0px;
+		margin-left: 0px;
+	}
+
+															/*education section 400px*/
+	.education-title {
+		margin-bottom: 10%;
+	}
+
+	.education-title h2{
+		font-size: 2.5rem;
+	}
+
+	.education-title span {
+		font-size: 1rem;
+	}
+
+	.education-school {
+	 	letter-spacing: 0.5px;
+	 	font-size: 1rem;
+	}
+
+	.education-sub {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		font-size: 0.8rem;
+	}
+
+	.education-address {
+	 	font-size: 0.8rem;
+	 	margin-top: 0.5rem;
+	  	margin-bottom: 0.5rem;
+	}
+
+	.education-logo {
+		margin-top: 20px;
+	}
+
+	.school-logo {
+		width: 70px;
+		height: auto;
+	}
+}
+
+
+
+
+
+
+
 
 @media (max-width: 650px) {
+
+	/*navigation section*/
+
 	#menu-icon {
 		display: block;
 	}
@@ -619,11 +858,3 @@ body::-webkit-scrollbar{
 	}
 }
 
-
-
-
-
-
-/*1024px
-768px
-380px*/
