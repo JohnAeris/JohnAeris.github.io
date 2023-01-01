@@ -236,7 +236,7 @@ body::-webkit-scrollbar{
 }
 
 .option-container a{
-	margin-top: 40px;
+	margin-top: 30px;
 	display: inline-block;
 	border-radius: 5px;
 	border: 2px solid var(--bg-color-primary);
@@ -359,13 +359,17 @@ body::-webkit-scrollbar{
 	color: var(--text-color-secondary);
 }
 
+.skill-logo p{
+	font-size: 0.8rem;
+}
+
 .skill-logo:hover{
 	color: var(--text-color-primary);
 	transition: 2s all;
 }
 
 .skill-container .skill-logo-container img{
-	width: 120px;
+	width: 100px;
 	height: auto;
 	max-width: 100%;
 	margin-top: 40px;
@@ -665,6 +669,7 @@ body::-webkit-scrollbar{
 
 	.text-container {
 		margin-top: 50px;
+		padding: 0px 20px;
 	}
 
 	.text-container h1 {
@@ -672,6 +677,7 @@ body::-webkit-scrollbar{
 	}
 
 	.text-container p {
+		text-align: center;
 		margin-top: 20px;
 		font-size: 0.9rem;
 	}
@@ -916,6 +922,7 @@ body::-webkit-scrollbar{
 
 	.text-container {
 		margin-top: 50px;
+		padding: 0px 10px;
 	}
 
 	.text-container h1 {
@@ -1577,6 +1584,8 @@ body::-webkit-scrollbar{
 	.text-container h1{
 		font-size: 4rem;
 	}
+
+
 
 	/*about section 820px*/
 
