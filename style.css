@@ -1528,6 +1528,10 @@ body::-webkit-scrollbar{
 	
 	/*navigation section 720px*/
 
+	.text-container h1 {
+		font-size: 3.5rem;
+	}
+
 	.cv-btn {
 		font-size: 0.8rem;
 		text-align: center;
@@ -1584,8 +1588,6 @@ body::-webkit-scrollbar{
 	.text-container h1{
 		font-size: 4rem;
 	}
-
-
 
 	/*about section 820px*/
 
