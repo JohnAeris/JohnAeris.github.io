@@ -324,6 +324,28 @@ body::-webkit-scrollbar{
 	line-height: 25px;
 }
 
+.socmed {
+	justify-content: center;
+	margin-top: 20px;
+	display: flex;
+}
+
+.socmed img {
+	width: 40px;
+	min-width: 20px;
+	height: auto;
+	margin: 0px 10px;
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+}
+
+.socmed img:hover {
+	transform: scale(1.4);
+	transition: 0.5s;
+	filter: none;
+	-webkit-filter: none;
+}	
+
 															/*skills section*/
 
 .skills {
