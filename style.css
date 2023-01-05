@@ -164,6 +164,7 @@ header.scrolled .cv-btn:hover {
 															/*home section*/
 
 section {
+	overflow-x: hidden;
 	padding: 80px 10%;
 }
 
@@ -591,10 +592,11 @@ body::-webkit-scrollbar{
 	}
 
 	.home{
-		min-height: 80vh;
+		min-height: 100vh;
 	}
 
 	.navlist{
+		width: 100%;
 		position: absolute;
 		top: -600px;
 		left: 0;
@@ -603,7 +605,6 @@ body::-webkit-scrollbar{
 		background: var(--bg-color-secondary);
 		text-align: right;
 		transition: all .40s;
-		margin-right: 15px;
 	}
 
 	.navlist a {
@@ -857,7 +858,10 @@ body::-webkit-scrollbar{
 		background: var(--bg-color-secondary);
 		text-align: right;
 		transition: all .40s;
-		margin-right: 35px;
+	}
+
+	.navlist {
+		width: 420px;
 	}
 
 	.navlist a {
