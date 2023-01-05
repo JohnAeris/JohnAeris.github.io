@@ -309,7 +309,7 @@
   .project-img {
     width: 200px;
     bottom: 30px;
-    right: -5%;
+    right: 5%;
     transition: 2s;
   }
 
