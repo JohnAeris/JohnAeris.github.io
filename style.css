@@ -603,6 +603,7 @@ body::-webkit-scrollbar{
 		background: var(--bg-color-secondary);
 		text-align: right;
 		transition: all .40s;
+		margin-right: 15px;
 	}
 
 	.navlist a {
@@ -856,6 +857,7 @@ body::-webkit-scrollbar{
 		background: var(--bg-color-secondary);
 		text-align: right;
 		transition: all .40s;
+		margin-right: 35px;
 	}
 
 	.navlist a {
