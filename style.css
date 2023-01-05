@@ -861,10 +861,6 @@ body::-webkit-scrollbar{
 		transition: all .40s;
 	}
 
-	.navlist {
-		width: 420px;
-	}
-
 	.navlist a {
 		display: block;
 		padding: 1rem;
