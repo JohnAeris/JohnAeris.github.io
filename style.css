@@ -205,7 +205,6 @@ body::-webkit-scrollbar{
 	display: flex;
 	justify-content: left;
 	margin-left: 5%;
-	margin-top: 30px;
 	position: relative;
 }
 
@@ -685,13 +684,12 @@ body::-webkit-scrollbar{
 		display: flex;
 		justify-content: none;
 		max-width: 250px;
-		margin-top: 0px;
 		margin-left: 0%;
 		margin: 0 50px ;
 	}
 
 	.profile-image img{
-		margin-top: 130px;
+		margin-top: 80px;
 		border: 3px solid #ffffff;
 	}
 
@@ -1183,7 +1181,7 @@ body::-webkit-scrollbar{
 
 
 	.profile-image img{
-		margin-top: 15%;
+		margin-top: 5%;
 	}
 
 	.text-container {
@@ -1414,7 +1412,7 @@ body::-webkit-scrollbar{
 
 
 	.profile-image img{
-		margin-top: 15%;
+		margin-top: 5%;
 	}
 
 	.text-container {
@@ -1714,6 +1712,77 @@ body::-webkit-scrollbar{
 	.about-text {
 		text-align: center;
 		margin-left: 5%;
+	}
+
+}
+
+@media screen and (max-height: 720px) {
+
+	.profile-image {
+		max-width: 200px;
+		transition: 1s;
+	}
+}
+
+@media screen and (max-height: 620px) {
+
+	.profile-image {
+		max-width: 200px;
+		transition: 1s;
+	}
+
+	.text-container {
+		margin-top: 10px;
+	}
+
+	.text-container h1 {
+		font-size: 3rem;
+	}
+
+	.text-container p {
+		font-size: 1rem;
+	}
+
+}
+
+@media screen and (max-height: 520px) {
+
+	.profile-image {
+		max-width: 150px;
+		transition: 1s;
+	}
+
+	.text-container {
+		margin-top: 10px;
+	}
+
+	.text-container h1 {
+		font-size: 2rem;
+	}
+
+	.text-container p {
+		font-size: 0.9rem;
+	}
+
+}
+
+@media screen and (max-height: 420px) {
+
+	.profile-image {
+		max-width: 100px;
+		transition: 1s;
+	}
+
+	.text-container {
+		margin-top: 10px;
+	}
+
+	.text-container h1 {
+		font-size: 2rem;
+	}
+
+	.text-container p {
+		font-size: 0.9rem;
 	}
 
 }
