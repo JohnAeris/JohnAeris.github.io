@@ -327,6 +327,12 @@ body::-webkit-scrollbar{
 	line-height: 25px;
 }
 
+.github {
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+
 .socmed {
 	justify-content: center;
 	margin-top: 20px;
