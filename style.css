@@ -572,9 +572,10 @@ body::-webkit-scrollbar{
 	width: 0.5rem;
 	height: 0.5rem;
 	border-radius: 50%;
-	background-color: #999999;
-	opacity: 0.75;
+	background-color: #FFBF00;
+	opacity: 0.80;
 	transition: opacity ease 250ms;
+	border: 0.5px solid black;
 }
 
 .slider-nav a:hover {
